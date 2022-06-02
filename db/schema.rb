@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2022_05_28_021333) do
 
   create_table "trip_destinations", force: :cascade do |t|
     t.string "name"
+    t.string "country"
+    t.string "continent"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
