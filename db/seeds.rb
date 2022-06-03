@@ -67,6 +67,18 @@ Attraction.create([{
     }])
 
     Attraction.create([{
+        name: "Amalfi Coast",
+        description: "The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy’s Sorrentine Peninsula, in the Campania region. It’s a popular holiday destination, with sheer cliffs and a rugged shoreline dotted with small beaches and pastel-colored fishing villages. The coastal road between the port city of Salerno and clifftop Sorrento winds past grand villas, terraced vineyards and cliffside lemon groves.",
+        destination_id: 2
+        }])
+
+        Attraction.create([{
+            name: "Positano",
+            description: "Positano is a cliffside village on southern Italy's Amalfi Coast. It's a well-known holiday destination with a pebble beachfront and steep, narrow streets lined with boutiques and cafes. Its Chiesa di Santa Maria Assunta features a majolica-tiled dome and a 13th-century Byzantine icon of the Virgin Mary. The Sentiero degli Dei hiking trail links Positano to other coastal towns",
+            destination_id: 2
+            }])
+
+    Attraction.create([{
         name: "German Museum of Technology",
         description: "German museum of science and technology is a large collection of historical technical artifacts. The museum's main emphasis originally was on rail transport, but today it also features exhibits of various sorts of industrial technology.",
         destination_id: 3
