@@ -1,22 +1,23 @@
 class AttractionsController < ApplicationController
-    get "/attraction" do 
-            # render all of the books as JSON
-    Attraction.all.to_json(include: [author: {only: [:id, :name]}], except: [:created_at, :updated_at])
+    get "/attractions" do 
+        # render all of the books as JSON
+    Attraction.all.to_json
 end
 
-get "/attraction/:attraction_id/destination" do
-  find_attraction
-  @attraction.destination.to_json(include: [:attraction])
-end
-
-get "/destination/:id" do
+get "/destination/:destination_id/attraction" do
   find_destination
-  destination_to_json
+  @destination.attraction.to_json(include: [:destination])
+end
+# all attraction located at destination
+
+get "/attraction/:id" do
+  find_attraction
+  attraction_to_json
 end
 
-post "/attraction/:attraction_id/destination" do
-  find_attraction
-  @destination = @destination.attraction.build(params)
+post "/destination/:destination_id/attraction" do
+  find_destination
+  @attraction = @destination.attraction.build(params)
   if @attraction.save
     # return object as json if saved
     attraction_to_json
@@ -26,12 +27,12 @@ post "/attraction/:attraction_id/destination" do
   end
 end
 
-patch "/destination/:id" do
-  find_destination
-  if @destination.update(params)
-    destination_to_json
+patch "/attraction/:id" do
+  find_attraction
+  if @attraction.update(params)
+    attraction_to_json
   else
-    destination_error_messages
+    attraction_error_messages
   end
 end
 
@@ -62,5 +63,4 @@ private
     { errors: @attraction.errors.full_messages }.to_json
   end
 end
-      end
-end
+    
