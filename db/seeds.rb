@@ -51,6 +51,12 @@ Attraction.create([{
         destination_id: 1
         }])
 
+        Attraction.create([{
+            name: "Cathédrale Notre-Dame de Paris",
+            description: "Notre-Dame de Paris, referred to simply as Notre-Dame, is a medieval Catholic cathedral on the Île de la Cité, in the 4th arrondissement of Paris. The cathedral, dedicated to the Virgin Mary, is considered one of the finest examples of French Gothic architecture.",
+            destination_id: 1
+            }])
+
 
 Attraction.create([{
     name: "Colloseum Tour",
