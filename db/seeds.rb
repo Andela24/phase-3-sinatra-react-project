@@ -143,10 +143,17 @@ Attraction.create([{
                 }])
 
                 Attraction.create([{
-                    name: "Great Wall Of China",
-                    description: "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.",
+                    name: "Temple of Heaven",
+                    description: "The Temple of Heaven is an imperial complex of religious buildings situated in the southeastern part of central Beijing. The complex was visited by the Emperors of the Ming and Qing dynasties for annual ceremonies of prayer to Heaven for a good harvest. ",
                     destination_id: 6
                         }])
+
+                        Attraction.create([{
+                            name: "Happy Valley Beijing",
+                            description: "Happy Valley Beijing is an amusement park in Beijing built and operated by Beijing OCT, which is part of the Overseas Chinese Town Company. The park is located in Chaoyang District in eastern Beijing. Opened in July 2006, it is the second park of the Happy Valley theme park chain. ",
+                            destination_id: 6
+                                }])
+
 
 
 
