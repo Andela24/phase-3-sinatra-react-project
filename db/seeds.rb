@@ -84,6 +84,18 @@ Attraction.create([{
         destination_id: 3
         }])
 
+        Attraction.create([{
+            name: "Brandenburg Gate",
+            description: "The Brandenburg Gate is an 18th-century neoclassical monument in Berlin, built on the orders of Prussian king Frederick William II after the temporary restoration of order during the Batavian Revolution. One of the best-known landmarks of Germany, it was built on the site of a former city gate that marked the start of the road from Berlin to the town of Brandenburg an der Havel, which used to be the capital of the Margraviate of Brandenburg.",
+            destination_id: 3
+            }])
+
+            Attraction.create([{
+                name: "Victory Column",
+                description: "The Victory Column is a monument in Berlin, Germany. Designed by Heinrich Strack after 1864 to commemorate the Prussian victory in the Second Schleswig War, by the time it was inaugurated on 2 September 1873, Prussia had also defeated Austria and its German allies in the Austro-Prussian War and France in the Franco-Prussian War, giving the statue a new purpose. ",
+                destination_id: 3
+                }])
+
     Attraction.create([{
         name: "Beach Day At Malibu",
         description: "Malibu is a beautiful city famous for its beaches, natural hiking trails, and the many celebrities that have homes in its region. With a mix of laid
