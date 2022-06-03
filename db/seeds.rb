@@ -121,11 +121,32 @@ Attraction.create([{
             destination_id: 5
             }])
 
+            Attraction.create([{
+                name: "International Rose Garden",
+                description: "The International Rose Test Garden is a rose garden in Washington Park in Portland, Oregon, United States.
+                There are over 10,000 rose bushes of approximately 650 varieties. The roses bloom from April through October with the peak coming in June, depending on the weather. 
+                New rose cultivars are continually sent to the garden from many parts of the world and are evaluated on several characteristics, including disease resistance, bloom formation,
+                color, and fragrance. It is the oldest continuously operating public rose test garden in the United States and exemplifies Portland's nickname, "City of Roses". The garden draws an estimated 700,000 visitors annually.",
+                destination_id: 5
+                }])
+
+                Attraction.create([{
+                    name: "Bridal Veil Falls",
+                    description: "The Bridal Veil Falls in the Columbia River Gorge in Oregon is a waterfall located on Bridal Veil Creek. It is located in Multnomah County, Oregon, United States. The Historic Columbia River Highway passes over Bridal Veil Falls on a bridge, the Bridal Veil Falls Bridge, which is listed on the National Register of Historic Places as a contributing structure.",
+                    destination_id: 5
+                    }])
+
         Attraction.create([{
             name: "Great Wall Of China",
             description: "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.",
             destination_id: 6
                 }])
+
+                Attraction.create([{
+                    name: "Great Wall Of China",
+                    description: "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.",
+                    destination_id: 6
+                        }])
 
 
 
