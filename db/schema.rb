@@ -12,14 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2022_05_28_021333) do
 
-  create_table "trip_attractions", force: :cascade do |t|
+  create_table "attractions", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.boolean "pet_friendly", default: true
-    t.integer "trip_destination_id"
+    t.integer "destination_id"
   end
 
-  create_table "trip_destinations", force: :cascade do |t|
+  create_table "destinations", force: :cascade do |t|
     t.string "name"
     t.string "country"
     t.string "continent"
