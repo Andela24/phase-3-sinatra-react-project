@@ -5,9 +5,16 @@ class DestinationsContoller < ApplicationController
     end
 
 get "/destination/:id" do
-    attraction=Attraction.find_by_id(params["id"])
-    attraction.to_json(include: [:destination])
+    destination=Destination.find_by_id(params["id"])
+    destination.to_json(include: [:attractions])
 end
+
+# post "/destination" do
+#   destination = Destination.new(params)
+#   if destination.save
+
+#     Destination.all.to_json(include: [attractions: {only: [:id]}])
+# end
 
 
 
