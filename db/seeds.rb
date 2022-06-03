@@ -104,6 +104,18 @@ Attraction.create([{
         }])
 
         Attraction.create([{
+            name: "Day Trip To Santa Monica",
+            description: "The blend of Santa Monica's natural beauty, award winning dining, incomparable hotel collection and famed shopping options, all on one of California's most iconic stretches of shoreline, creates a truly unforgettable seaside destination.",
+            destination_id: 4
+            }])
+
+            Attraction.create([{
+                name: "Day Trip To Huntington Beach",
+                description: "Huntington Beach is a California city southeast of Los Angeles. It's known for surf beaches, such as Huntington City Beach, with its long Huntington Beach Pier. The International Surfing Museum displays longboards and other memorabilia.",
+                destination_id: 4
+                }])
+
+        Attraction.create([{
             name: "Portland Japanesse Garden",
             description: "Japanese gardens are renowned the world over for their beauty, intricacy, and depth of meaning. The construction of gardens became an important cultural art form in and of itself and is a great source of national pride of Japanese people and a great source of enjoyment for all who visit Japan.",
             destination_id: 5
