@@ -40,13 +40,13 @@ beijing = Destination.create([{
 }])
 
 Attraction.create([{
-    name: "Eiffel Tower",
+    name: "Eiffel Tower, Paris",
     description: "The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.",
     destination_id: 1
     }])
 
     Attraction.create([{
-        name: "Louvre Museum",
+        name: "Louvre Museum, Paris",
         description: "The Louvre, or the Louvre Museum, is the world's most-visited museum, and a historic landmark in Paris, France. It is the home of some of the best-known works of art, including the Mona Lisa and the Venus de Milo. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement.",
         destination_id: 1
         }])
@@ -59,7 +59,7 @@ Attraction.create([{
 
 
 Attraction.create([{
-    name: "Colloseum Tour",
+    name: "Colloseum Tour, Roma",
     description: "The Colosseum is an oval amphitheater in the center of the city of Rome,
     Italy, just east of the Roman Forum. It is the largest ancient amphitheater
     ever built, and is still the largest standing amphitheater in the world today, despite its age.",
@@ -67,7 +67,7 @@ Attraction.create([{
     }])
 
     Attraction.create([{
-        name: "Amalfi Coast",
+        name: "Amalfi Coast, Italy",
         description: "The Amalfi Coast is a 50-kilometer stretch of coastline along the southern edge of Italy’s Sorrentine Peninsula, in the Campania region. It’s a popular holiday destination, with sheer cliffs and a rugged shoreline dotted with small beaches and pastel-colored fishing villages. The coastal road between the port city of Salerno and clifftop Sorrento winds past grand villas, terraced vineyards and cliffside lemon groves.",
         destination_id: 2
         }])
@@ -148,11 +148,11 @@ Attraction.create([{
                     destination_id: 6
                         }])
 
-                        Attraction.create([{
-                            name: "Happy Valley Beijing",
-                            description: "Happy Valley Beijing is an amusement park in Beijing built and operated by Beijing OCT, which is part of the Overseas Chinese Town Company. The park is located in Chaoyang District in eastern Beijing. Opened in July 2006, it is the second park of the Happy Valley theme park chain. ",
-                            destination_id: 6
-                                }])
+ Attraction.create([{
+    name: "Happy Valley Beijing",
+    description: "Happy Valley Beijing is an amusement park in Beijing built and operated by Beijing OCT, which is part of the Overseas Chinese Town Company. The park is located in Chaoyang District in eastern Beijing. Opened in July 2006, it is the second park of the Happy Valley theme park chain. ",
+     destination_id: 6
+      }])
 
 
 
