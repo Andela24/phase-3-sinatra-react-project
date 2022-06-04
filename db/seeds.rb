@@ -98,8 +98,8 @@ Attraction.create([{
 
     Attraction.create([{
         name: "Beach Day At Malibu",
-        description: "Malibu is a beautiful city famous for its beaches, natural hiking trails, and the many celebrities that have homes in its region. With a mix of laid
-        -back attractions and upscale luxury hotspots, there are so many places to see and places to go within the vibrant, sunny town.",
+        description: "Malibu is a beautiful city famous for its beaches, natural hiking trails, and the many celebrities that have homes in its region. 
+        With a mix of laid-back attractions and upscale luxury hotspots, there are so many places to see and places to go within the vibrant, sunny town.",
         destination_id: 4
         }])
 

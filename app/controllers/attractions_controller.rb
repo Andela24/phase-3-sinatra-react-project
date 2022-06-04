@@ -4,30 +4,29 @@ class AttractionsController < ApplicationController
     Attraction.all.to_json
 end
 
-get "/destination/:destination_id/attraction" do
+get "/destination/:destination_id/attractions" do
   find_destination
   @destination.attraction.to_json(include: [:destination])
 end
-# all attraction located at destination
+# all attractions located at destination
 
-get "/attraction/:id" do
+get "/attractions/:id" do
   find_attraction
   attraction_to_json
 end
 
-post "/destination/:destination_id/attraction" do
-  find_destination
-  @attraction = @destination.attraction.build(params)
-  if @attraction.save
-    # return object as json if saved
-    attraction_to_json
-  else
-    # return error messages if not saved
-    attraction_error_messages
+post "/attractions/new" do
+    @attraction = Attraction.new(params)
+    if @attraction.save
+      # return object as json if saved
+      attraction_to_json
+    else
+      # return error messages if not saved
+      attraction_error_messages
+    end
   end
-end
 
-patch "/attraction/:id" do
+patch "/attractions/:id" do
   find_attraction
   if @attraction.update(params)
     attraction_to_json
@@ -36,7 +35,7 @@ patch "/attraction/:id" do
   end
 end
 
-delete "/attraction/:id" do
+delete "/attractions/:id" do
   find_attraction
   if @attraction
     @attraction.destroy
