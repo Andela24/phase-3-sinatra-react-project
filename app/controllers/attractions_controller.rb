@@ -15,8 +15,21 @@ get "/attractions/:id" do
   attraction_to_json
 end
 
-post "/attractions/new" do
+# post "/attractions/new" do
+#     @attraction = Attraction.new(params)
+#     if @attraction.save
+#       # return object as json if saved
+#       attraction_to_json
+#     else
+#       # return error messages if not saved
+#       attraction_error_messages
+#     end
+#   end
+
+post "/destination/:destination_id/attractions/new" do
+    find_attraction
     @attraction = Attraction.new(params)
+    # @attraction = @destination.attraction.build(params)
     if @attraction.save
       # return object as json if saved
       attraction_to_json
