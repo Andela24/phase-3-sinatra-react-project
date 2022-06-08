@@ -6,7 +6,7 @@ end
 
 get "/destination/:destination_id/attractions" do
   find_destination
-  @destination.attraction.to_json(include: [:destination])
+  @destination.attractions.to_json(include: [:destination])
 end
 # all attractions located at destination
 
@@ -27,19 +27,18 @@ post "/attractions/new" do
     end
   end
 
-#     post "/destination/:destination_id/attractions/new" do
+    post "/destination/:destination_id/attractions/new" do
 
-#     find_attraction
-#     @attraction = Attraction.new(params)
-#     # @attraction = @destination.attraction.build(params)
-#     if @attraction.save
-#       # return object as json if saved
-#       attraction_to_json
-#     else
-#       # return error messages if not saved
-#       attraction_error_messages
-#     end
-#   end
+    @destination = find_destination
+    # @attraction = @destination.attractions.build(params)
+    if @attraction.save
+      # return object as json if saved
+      attraction_to_json
+    else
+      # return error messages if not saved
+      attraction_error_messages
+    end
+  end
 
 patch "/attractions/:id" do
   find_attraction
