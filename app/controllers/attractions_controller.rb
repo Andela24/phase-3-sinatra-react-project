@@ -27,18 +27,7 @@ post "/attractions/new" do
     end
   end
 
-    post "/destination/:destination_id/attractions/new" do
 
-    @destination = find_destination
-    # @attraction = @destination.attractions.build(params)
-    if @attraction.save
-      # return object as json if saved
-      attraction_to_json
-    else
-      # return error messages if not saved
-      attraction_error_messages
-    end
-  end
 
 patch "/attractions/:id" do
   find_attraction
